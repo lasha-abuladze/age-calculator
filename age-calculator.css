@@ -1,0 +1,238 @@
+
+
+main {
+    width: 100%; 
+    height: 100vh;
+    background-color: #F0F0F0;
+    padding: 88px 16px 0px 16px;
+    box-sizing: border-box;
+
+    font-family: Poppins;
+}
+
+form { 
+    margin: auto;
+    background-color: #fff;
+    border-radius: 24px 24px 100px 24px;
+    padding:  48px 24px;
+}
+
+
+.div-date-inputs label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: #716F6F;
+    margin-bottom: 5px;
+}
+
+.div-date-inputs {
+    display: flex;
+    gap: 16px;
+    border-bottom: 1px solid #DCDCDC;
+    /* padding-top: 48px; */
+    padding-bottom: 63.5px;
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+.date-input {
+    width: 100%;
+    height: 54px;
+    padding-left: 16px;
+    box-sizing: border-box;
+    
+    font-size: 20px;
+    font-weight: 700;
+    color: #151515;
+
+    border: 1px solid #DCDCDC;
+    border-radius: 8px;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+.date-input::placeholder {
+    color: #151515;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+
+.date-input:hover {
+    border: 1px solid #854DFF;
+    transition: all 0.2s;
+}
+
+.date-input:focus {
+    border: 1px solid #854DFF;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* input[type="number"] {
+    -moz-appearance: textfield;
+} */
+
+
+
+.error-div {
+    margin-top: 8px;
+    color: red;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.error-required {
+    display: none;
+}
+
+.error-valid {
+    display: none;
+}
+
+.error-valid-date {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+.red-border {
+    border: 1px solid red;
+}
+
+
+
+
+.submit-btn {
+
+    width: 64px; height: 64px;
+    border: none;
+    outline: none;
+
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%, 50%);
+
+    border-radius: 100%;
+    background-color: #854DFF;
+
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #151515;
+    transition: all 0.3s;
+}
+
+.submit-svg {
+    width: 25px;
+}
+
+
+
+
+
+
+
+
+.result {
+    margin-top: 64.5px;
+}
+
+.result span {
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.span-result-N {
+    color: #854DFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 700px) {
+
+    form { 
+        width: 640px;
+    }
+
+    .date-input {
+        width: 160px;
+    }
+
+    .submit-btn {
+        right: 0;
+        transform: translate(0px, 50%);
+    }
+
+
+    .result {
+        margin-top: 48.5px;
+    }
+    
+    .result span {
+        font-size: 80px;
+        font-weight: 800;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 900px) {
+
+    form { 
+        width: 840px;
+    }
+
+    .submit-btn {
+        width: 94px;
+        height: 94px;
+    }
+
+    .result span {
+        font-size: 104px;
+    }
+
+    .submit-svg {
+        width: 40px;
+    }
+}
+
+
+
+
+
+
